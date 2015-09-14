@@ -15,30 +15,40 @@
           <form id="new-place">
             <div class= "form-group">
               <label for="place">Add a new place:</label>
-              <input type="text" class="form-control" id="place">
+              <input type="text" class="form-control place-name">
             </div>
             <div class= "form-group">
               <label for="landmark">Add a new landmark:</label>
-              <input type="text" class="form-control" id="landmark">
+              <input type="text" class="form-control landmark">
             </div>
             <div class= "form-group">
               <label for="time-of-year">Add a new time of year:</label>
-              <input type="text" class="form-control" id="time-of-year">
+              <input type="text" class="form-control time-of-year">
             </div>
             <div class= "form-group">
               <label for="note">Add a new note:</label>
-              <input type="text" class="form-control" id="note">
+              <input type="text" class="form-control note">
             </div>
             <button type="submit" class= "btn btn-primary">Submit</button>
           </form>
         </div>
+        <div class="col-md-6">
+          <div id="place-info">
+            <h2></h2>
+
+            <p>Place: <span class="place-name"></span></p>
+            <p>Landmark: <span class="landmark"></span></p>
+            <p>Time of year: <span class="time-of-year"></span></p>
+            <p>Note: <span class="note"></span></p>
+          </div>
+        </div>
       </div>
       <div class="col-md-6">
-
-        <h2>Places you've been:</h2>
-        <ul id="places-you-been">
-
-        </ul>
+        <div id="show-places">
+          <h2>Places you've been:</h2>
+          <ul id="places-you-been">
+          </ul>
+        </div>
       </div>
     </div>
   </body>
